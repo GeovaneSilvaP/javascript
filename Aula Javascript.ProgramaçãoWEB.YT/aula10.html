@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos</title>
+  <style>
+    body{
+      text-align: center;
+      font-size: 30px;
+      background-color: #575D9D;
+    }
+    
+    button{
+      padding: 15px;
+      font-size: 30px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  </style>
+</head>
+
+<body onresize="redimensao()">
+  
+  <h1>Clique nos Eventos</h1>
+  <p>Em JavaScript, eventos são ações que ocorrem no navegador e que podem ser detectadas e tratadas com código. Eles são fundamentais para tornar páginas web interativas.</p>
+  <p id="texto"></p>
+  
+  <button onclick="umClique()">clique Aqui UMA VEZ....</button><br>
+  
+  <button ondblclick ="doisCliques()">Clique duas vezes</button>
+  
+  <div id="mouseMove" onmousemove="adicionaTexto()" onmouseout="viraVermelho()" onmouseover="virarAzul()" style="margin: auto auto; width: 80%; height: 200px; background-color: red; margin-top: 35px;"></div>
+  
+  <input onkeypress="teclaPress()" onblur="umClique()" type="text" id="compoTexto" value="Já vem com texto" style="padding: 30px; margin-top: 30px; font-size: 30px;" placeholder="Digite um texto..."/><br>
+  
+  <select onchange="mudou()" id="itens">
+    <option value="valor1">valor1</option>
+    <option value="valor2">valor2</option>
+    <option value="valor3">valor3</option>
+    <option value="valor4">valor4</option>
+  </select>
+  
+  <script src="codigoJS.js/aula10.js"></script>
+</body>
+
+</html>
