@@ -1,0 +1,58 @@
+body{
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculadora{
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+#display{
+    width:100% ;
+    padding: 10px;
+    font-family: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.botoes button{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.operador{
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.numero{
+    background-color: #333;
+    color: #fff;
+}
+
+.igual{
+    background-color: #28a745;
+    color: #fff;
+    width: 130px;
+}

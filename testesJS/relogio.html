@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #111;
+            color: #00ffcc;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #relogio{
+            font-size: 60px;
+            border: 2px solid #00ffcc;
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+    </style>
+    <title>relogioJS</title>
+</head>
+<body>
+    
+<div id="relogio">00:00:00</div>
+
+    <script>
+        function atualizarRelogio(){
+        const agora = new Date()
+        let horas = agora.getHours().toString().padStart(2,'0')
+        let minutos = agora.getMinutes().toString().padStart(2, '0')
+        let segundos = agora.getSeconds().toString().padStart(2, '0')
+
+        const horaAtual = `${horas}:${minutos}:${segundos}`
+        document.getElementById('relogio').innerText = horaAtual
+        }
+
+        setInterval(atualizarRelogio, 1000)
+        atualizarRelogio()
+    </script>
+</body>
+</html>
