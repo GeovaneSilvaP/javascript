@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SetTime e SetInterval</title>
+</head>
+<style>
+  body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1{
+    font-size: 55px;
+  }
+  
+  button {
+      padding: 40px;
+      font-size: 25px;
+      cursor: pointer;
+      margin-top: 20px;
+      background-color: red;
+      color: white;
+    }
+.ativarC{
+  background-color: green;
+  color: white;
+}
+
+.ativarD{
+  background-color: green;
+  color: white;
+}
+    p {
+      font-size: 50px;
+    }
+</style>
+  
+</style>
+<body>
+  <h1>Controle de tempo</h1>
+  <p id="tempo">0</p>
+  <button class="ativarC" onclick="ativarContagem()">Ativar Contagem</button>
+  <button class="pararC" onclick="pararContagem()">Parar Contagem</button>
+  
+    <p id="tempoInterval">0</p>
+
+  
+    <button class="ativarD" onclick="ativarInterval()">Ativar Contagem</button>
+  <button class="pararD" onclick="pararInterval()">Parar Contagem</button>
+  
+  <script src="codigoJS.js/aula16.js"></script>
+</body>
+
+</html>

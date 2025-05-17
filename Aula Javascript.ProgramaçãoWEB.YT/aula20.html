@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(112, 126, 133);
+        }
+        h1{
+            text-align: center;
+            font-size: 3rem;
+        }
+        header{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            width: 90%;
+            margin: auto auto;
+        }
+        input{
+            height: 120px;
+            width: 80%;
+            font-size: 2rem;
+            padding-left: 10%;
+        }
+        button.add{
+            width: 20%;
+            cursor: pointer;
+            background: green;
+            color: white;
+            font-weight: bold;
+            border: none;
+            height: 120px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        main{
+            display: flex;
+            flex-flow: row wrap;
+            width: 90%;
+            /*border: 1px solid blue;*/
+            margin: auto auto;
+            padding-top: 40px;
+        }
+        .item, .clicado{
+            display: flex;
+            flex-flow:row wrap ;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            height: 80px;
+            width: 100%;
+            margin-bottom: 2%;
+            box-shadow: 0 0 20px #ccc;
+            cursor: pointer;
+        }
+        .item-icone{
+            flex: 20%;
+            /*border: 1px solid orange;*/
+            text-align: center;
+            font-size: 2em;
+        }
+        .item-nome{
+            flex: 55%;
+            /*border: 1px solid rgb(255, 0, 64);*/
+            font-size: 20px;
+            font-weight: bold
+        }
+        .item-butao{
+            flex: 25%;
+            /*border: 1px solid rgb(0, 255, 21);*/
+        }
+        .delete{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            height: 80px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+        .clicado .item-icone{
+            color: green;
+        }
+        .item.clicado{
+            background: rgb(156, 236, 210);
+        }
+        .item.clicado .item-nome{
+            text-decoration: line-through;
+            color: #635e5e;
+        }
+        .clicado {
+    text-decoration: line-through;
+    color: gray;
+}
+
+        
+    </style>
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <header>
+        <input type="text" id="inputTarefa" placeholder="Digite seu texto...">
+        <button class="add" id="btn-add" onclick="addTarefa()">Adicionar</button>
+    </header>
+
+    <main id="areaLista">
+        
+    </main>
+
+    <script src="codigoJS.js/aula20.js"></script>
+</body>
+</html>
