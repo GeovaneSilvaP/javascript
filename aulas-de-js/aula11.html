@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos</title>
+</head>
+
+<body onload="carregou()" onscroll="rolouPagina()">
+  <main id="telaPrincipal">
+    <h1 onmouseover="focou">Aula 11 Js</h1>
+    <section class="conteudo">
+      <article class="box">
+      </article>
+      <article class="box">
+      </article>
+        <button id="btn1">Butão 1</button>
+        <button id="btn2">Butão 2</button>
+    </section>
+    <hr/>
+    <form>
+      <input type="text" id="cxtexto" placeholder="Digite seu nome..." onfocus="focoCampo()" onfocusOut= "semFocoCampo()" onkeypress="precionouTecla()"/>
+      <button type="submit" id="btn3" class="botao">Enviar</button>
+    </form>
+  </main>
+  
+  <script src="codigoJS/aula11.js"></script>
+</body>
+
+</html>
