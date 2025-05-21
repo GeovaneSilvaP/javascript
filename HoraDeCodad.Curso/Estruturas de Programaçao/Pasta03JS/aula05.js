@@ -1,4 +1,5 @@
-//prompt
+//Símbolos especiais em string
 
-const age = prompt('Digite sua idade:')
-console.log(`Voce tem ${age} anos.`)
+console.log("Testando a \n quebra de linha")
+
+console.log("Espaçamento \t de Tab")

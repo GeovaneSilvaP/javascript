@@ -1,23 +1,8 @@
-//mais sobre variaveis
+//Ops aritméticas
 
-//let 2teste = 'invalido'
-//let @teste = 'invalido'
+console.log( 5 + 6)
+console.log( 7 - 4)
+console.log( 5 * 7)
+console.log( 6 / 1)
 
-let a = 10
-b = 34
-c =9
-
-console.log(a,b,c)
-
-const nomecompleto = 'Geovane Silva'
-
-const NomeCompleto = 'João da Silva'
-
-console.log(nomecompleto)
-console.log(NomeCompleto)
-
-let _teste = "ok"
-
-let $teste = "ok"
-
-console.log(_teste,$teste)
+console.log(5 +(4 * 2))

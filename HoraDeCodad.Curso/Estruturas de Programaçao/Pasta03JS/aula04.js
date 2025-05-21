@@ -1,11 +1,8 @@
-//O ambiente em javaScript
+//Strings
 
-/*
+console.log("Texto um")
+console.log('Texto dois')
+console.log(`Texto três`)
 
-Quando um programa é iniciado, um ambiente é criado
-Neste ambiente temos diversas funçoes e objetos da linguagem JavaScript
-Exemplo: console e alert
-Todo programa tera acesso a elas
-O ambiente no caso é o navegador
-
-*/
+console.log(typeof "Texto")
+console.log(typeof `Texto dois`)

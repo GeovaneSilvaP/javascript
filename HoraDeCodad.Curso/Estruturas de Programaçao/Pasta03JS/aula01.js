@@ -1,13 +1,7 @@
-//variaveis
+// - Tipo Number
 
-let nome = 'Geovane';
+console.log(2)
+console.log(12.7)
+console.log(-7)
 
-console.log(nome)
-
-nome = "Geovane silva"
-console.log(nome)
-
-const idade = 23
-console.log(idade)
-
-//idade = 26 const nao muda o valor
+console.log(typeof 2) //typeof = Vai mostrar o tipo
