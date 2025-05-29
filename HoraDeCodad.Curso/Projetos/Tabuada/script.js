@@ -1,20 +1,44 @@
-//Seleçao de elementos
-const multplicationForm = document.querySelector("#multplication-form");
+
+// Seleção de elementos
+const multiplicationForm = document.querySelector("#multiplication-form");
 const numberInput = document.querySelector("#number");
-const multplicadorInput = document.querySelector("#multplicador");
+const multiplicadorInput = document.querySelector("#multiplicador");
 
-//Funçoes
+const multiplicationTableT = document.querySelector("#multiplication-title span");
+const multiplicationTable = document.querySelector("#multiplication-operations");
 
-//Eventos
+// Funções
+const createTable = (number, multiplicationNumber) => {
+    multiplicationTable.innerHTML = "";
 
-multplicationForm.addEventListener("submit", (e)=>{
+    for (let i = 1; i <= multiplicationNumber; i++) {
+        const result = number * i;
+
+        const template = `
+            <div class="row">
+                <div class="operations">${number} x ${i} = </div>
+                <div class="result">${result}</div>
+            </div>
+        `;
+
+        const parser = new DOMParser();
+        const htmlTemplate = parser.parseFromString(template, "text/html");
+        const row = htmlTemplate.querySelector('.row');
+
+        multiplicationTable.appendChild(row);
+    }
+
+    multiplicationTableT.innerHTML = number;
+};
+
+// Eventos
+multiplicationForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const multiplicationNumber = +numberInput.value;
+    const number = +numberInput.value;
+    const multiplicadorNumber = +multiplicadorInput.value;
 
-        const multplicatorNumber = +multplicadorInput.value;
+    if (!number || !multiplicadorNumber) return;
 
-    if(!multiplicationNumber || !multplicatorNumber) return;
-
-        console.log(multiplicationNumber, multplicatorNumber);
-})
+    createTable(number, multiplicadorNumber);
+});
