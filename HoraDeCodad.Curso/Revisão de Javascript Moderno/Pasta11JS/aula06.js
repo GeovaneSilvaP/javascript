@@ -1,19 +1,32 @@
-//Destructuring
-const fruits = ["Maça", "Uva", "Laranja"]
-
-const [f1,f2,f3] = fruits
-
-console.log(f2,f3)
-
 //
+const moto = {
+marca: "Handa",
+modelo: "Biz",
+ano: 2019,
+km: 0,
+}
 
-const produtoDetalhes = {
-    nome: "Mouse",
-    preco: 60.00,
-    categoria: "Eletronicos",
-    cor: "Preto"
-};
+const motoDetalhe = {marca,modelo,ano,km: kmrodados} = moto
 
-const { nome: produtoNome, preco, categoria, cor } = produtoDetalhes;
+console.log(`A marca da sua moto é ${marca} do modelo ${modelo}, do ano ${ano} e ela rodou ${kmrodados}`)
 
-console.log(`O nome do produto é ${produtoNome}, ele custa R$${preco} e é da cor ${cor}`);
+//Destructuring
+
+const pessoa = {
+  nome: "Geovane",
+  idade: 23,
+  cidade: "Cajari",
+  profissão: "Programador",
+}
+
+const pessoaDetalhe = {nome, idade, cidade, profissão: js} = pessoa
+
+console.log(`Meu nome é ${nome} tenho ${idade} e moro em ${cidade} e minha profissão é ${js}`)
+
+//Destructuring
+
+const frutas = ["Maçã", "Pera", "Goiaba", "Acerola"]
+
+const [f1, f2, f3, f4,] = frutas
+
+console.log(f1, f4)
