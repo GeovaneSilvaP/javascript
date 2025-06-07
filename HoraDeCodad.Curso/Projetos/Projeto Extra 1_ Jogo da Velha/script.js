@@ -2,7 +2,7 @@ let x = document.querySelector(".x");
 let o = document.querySelector(".o");
 let boxes = document.querySelectorAll(".box");
 let buttons = document.querySelectorAll("#buttons-container button");
-let messageContainer = document.querySelectorAll("#message");
+let messageContainer = document.querySelector("#message");
 let messageText = document.querySelector("#message p");
 let secontPlayer;
 
@@ -77,8 +77,10 @@ function checkInCondition(){
 
         if(b1Child == "x" && b2Child == "x" && b3Child == "x"){
             //x
+            declareWinner("x")
         }else if(b1Child == "o" && b2Child == "o" && b3Child == "o"){
             //o
+            declareWinner("o")
         }
     }
 
@@ -91,8 +93,10 @@ function checkInCondition(){
 
         if(b4Child == "x" && b5Child == "x" && b6Child == "x"){
             //x
+            declareWinner("x")
         }else if(b4Child == "o" && b5Child == "o" && b6Child == "o"){
             //o
+            declareWinner("o")
         }
     }
 
@@ -104,8 +108,10 @@ function checkInCondition(){
 
         if(b7Child == "x" && b8Child == "x" && b9Child == "x"){
             //x
+            declareWinner("x")
         }else if(b7Child == "o" && b8Child == "o" && b9Child == "o"){
             //o
+            declareWinner("o")
         }
     }
 
@@ -118,8 +124,10 @@ function checkInCondition(){
 
         if(b1Child == "x" && b4Child == "x" && b7Child == "x"){
             //x
+            declareWinner("x")
         }else if(b1Child == "o" && b4Child == "o" && b7Child == "o"){
             //o
+            declareWinner("o")
         }
     }
 
@@ -131,8 +139,10 @@ function checkInCondition(){
 
         if(b2Child == "x" && b5Child == "x" && b8Child == "x"){
             //x
+            declareWinner("x")
         }else if(b2Child == "o" && b5Child == "o" && b8Child == "o"){
             //o
+            declareWinner("o")
         }
     }
 
@@ -144,8 +154,10 @@ function checkInCondition(){
 
         if(b3Child == "x" && b6Child == "x" && b9Child == "x"){
             //x
+            declareWinner("x")
         }else if(b3Child == "o" && b6Child == "o" && b9Child == "o"){
             //o
+            declareWinner("o")
         }
     }
 
@@ -158,8 +170,10 @@ function checkInCondition(){
 
         if(b1Child == "x" && b5Child == "x" && b9Child == "x"){
             //x
+            declareWinner("x")
         }else if(b1Child == "o" && b5Child == "o" && b9Child == "o"){
             //o
+            declareWinner("o")
         }
     }
 
@@ -171,8 +185,10 @@ function checkInCondition(){
 
         if(b3Child == "x" && b5Child == "x" && b7Child == "x"){
             //x
+            declareWinner("x")
         }else if(b3Child == "o" && b5Child == "o" && b7Child == "o"){
             //o
+            declareWinner("o")
         }
     }
 
@@ -187,6 +203,52 @@ function checkInCondition(){
     }
 
     if(counter == 9){
-        console.log("deu velha")
+        declareWinner("Deu velha")
+    }
+}
+
+//limpa o jogo, declara o vencedor e atualiza o placar
+
+function declareWinner(winner){
+
+    let scoreboardX = document.querySelector("#scoreboard-1");
+    let scoreboardY = document.querySelector("#scoreboard-2");
+    let msg = "";
+
+    if (winner == 'x') {
+
+        scoreboardX.textContent = parseInt(scoreboardX.textContent) + 1;
+
+        msg = "O Jogador 1 Venceu!"
+    }else if(winner == 'o'){
+
+        scoreboardY.textContent = parseInt(scoreboardY.textContent) + 1;
+
+        msg = "O Jogador 2 Venceu!";
+    }else{
+
+        msg = "Deu Velha!";
+    }
+
+    //exiber mensagem
+    messageText.innerHTML = msg;    
+    messageContainer.classList.remove("hide");
+
+    //esconder mensagem
+    setTimeout(function(){
+        messageContainer.classList.add("hide")
+    }, 3000)
+
+    //zerar jogadas
+    player1 = 0;
+    player2 = 0;
+
+    //remove x e o
+
+    let boxesToRemove = document.querySelectorAll(".box div");
+
+    for (let i = 0; i < boxesToRemove.length; i++) {
+        boxesToRemove[i].parentNode.removeChild(boxesToRemove[i]);
+        
     }
 }
