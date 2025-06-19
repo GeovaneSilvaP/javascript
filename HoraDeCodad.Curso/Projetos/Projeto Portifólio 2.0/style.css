@@ -165,7 +165,8 @@ section .especialidade {
 #container-imgs{
   width: 70%;
   margin: 50px auto;
-  background: rgba(236, 230, 230, 0.103);
+  margin-left: 250px;
+  background: rgba(236, 230, 230, 0.212);
   padding: 20px;
   border-radius: 10px;
   opacity: 0;
