@@ -14,6 +14,8 @@ btnEspecialidade.addEventListener("click", () => {
   especialidade.scrollIntoView({ behavior: "smooth" });
 });
 
+
+
 // Seleciona o container e a sessão
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

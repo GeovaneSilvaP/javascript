@@ -354,3 +354,66 @@ section .especialidade {
 box-shadow: 0px 0px 20px #75767A;
 transform: scale(1.05);
 }
+
+/*Sobre*/
+
+section .sobre{
+  padding: 80px 4%;
+}
+
+section .sobre .flex{
+  align-items: center;
+  gap: 60px;
+}
+
+section .text-sobre{
+  color: #fff;
+}
+
+section .text-sobre h2 {
+ color: #fff;
+  font-size: 50px;
+  line-height: 40px;
+  text-align: center;
+  padding: 40px 4%;
+  margin-top: 70px;
+}
+
+section .text-sobre h2 span{
+  display: block;
+}
+
+section .text-sobre p{
+  font-size: 25px;
+  margin: 40px 20px;
+  text-align: justify;
+}
+
+section .text-sobre span{
+  color:#12ad58;
+  font-size: 50px
+}
+
+.btn-social {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  gap: 20px;                
+  margin-top: 20px;
+}
+
+.btn-social a {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn-social a:hover {
+  transform: scale(1.1);
+}
