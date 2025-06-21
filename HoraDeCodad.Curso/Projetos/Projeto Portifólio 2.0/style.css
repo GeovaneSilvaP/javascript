@@ -48,9 +48,10 @@ header .interface{
   justify-content: space-between;
 }
 
-#imgs .imgsLogo{
-  width: 100px;
-  height: 100px;
+#imgs .large{
+  width: 50px;
+  height: 50px;
+  color: #75767A;
 }
 
 .interface a{
@@ -95,8 +96,8 @@ nav .navegador i{
   width: 100%;
 }
 
-/*Topo do site */
 
+/*Topo do site */
 
 section.topo-do-site{
   margin-top: 250px;
@@ -105,15 +106,69 @@ section.topo-do-site{
   z-index: 10;
 }
 
+section.topo-do-site .flex{
+  align-items: center;
+  justify-content: center;
+}
+
+#txt-top-site h1{
+  color: #fff;
+  font-size: 50px;
+  line-height: 40px;
+}
+
+#txt-top-site i{
+  font-size: 70px;
+  color: #12ad58;
+}
+
+.topo-do-site #txt-top-site p{
+  color: #fff;
+  margin: 40px 0;
+  font-size: 40px;
+}
+
+.topo-do-site #txt-top-site p span{
+  color:#12ad58;
+  font-size: 50px
+}
+
+.topo-do-site #img-perfil img{
+  width: 600px;
+  height: 500px;
+  position: relative;
+}
+
+.topo-do-site .site-btn button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #12ad58;
+  transition: .2s;
+}
+
+.site-btn button:hover{
+  box-shadow: 0px 0px 20px #09378b;
+  background-color: #43beee;
+  transform: scale(1.05);
+}
+
+
 /*fundo */
+
  .geometric-background {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            z-index: 1;
+            z-index: -2;
+            pointer-events: none;
         }
 
         .shape {
@@ -251,55 +306,7 @@ section.topo-do-site{
             }
         }
 
-section.topo-do-site .flex{
-  align-items: center;
-  justify-content: center;
-}
 
-#txt-top-site h1{
-  color: #fff;
-  font-size: 50px;
-  line-height: 40px;
-}
-
-#txt-top-site i{
-  font-size: 70px;
-  color: #12ad58;
-}
-
-.topo-do-site #txt-top-site p{
-  color: #fff;
-  margin: 40px 0;
-  font-size: 40px;
-}
-
-.topo-do-site #txt-top-site p span{
-  color:#12ad58;
-  font-size: 50px
-}
-
-.topo-do-site #img-perfil img{
-  width: 600px;
-  height: 500px;
-  position: relative;
-}
-
-.topo-do-site .site-btn button{
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  background-color: #12ad58;
-  transition: .2s;
-}
-
-.site-btn button:hover{
-  box-shadow: 0px 0px 20px #098b09;
-  transform: scale(1.05);
-}
 
 /*especialidades*/
 
@@ -308,7 +315,7 @@ section .especialidade {
 }
 
 .especialidade .flex{
-  margin: 15px;
+  margin: 15px ;
   gap: 50px;
 }
 
@@ -328,11 +335,12 @@ section .especialidade {
 
 #container-imgs{
   width: 70%;
-  margin: 50px auto;
+  margin: 50px 70px;
   margin-left: 250px;
-  background: rgba(236, 230, 230, 0.212);
+  background: rgba(236, 230, 230, 0.123);
   padding: 20px;
   border-radius: 10px;
+  cursor: pointer;
   opacity: 0;
   visibility: hidden;
   transition: opacity 1s ease;
@@ -405,6 +413,7 @@ section .text-sobre span{
 .btn-social a {
   width: 50px;
   height: 50px;
+  margin-top: 50px;
   font-size: 40px;
   border-radius: 50%;
   text-align: center;
@@ -416,4 +425,32 @@ section .text-sobre span{
 
 .btn-social a:hover {
   transform: scale(1.1);
+}
+
+.sobre img{
+  width: 500px;
+  height: 500px;
+  margin-left: 400px;
+  position: relative;
+  animation: flutuar 2s ease-out infinite alternate;
+}
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+
+.img-sobre {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.img-sobre.visivel {
+  opacity: 1;
+  transform: translateY(0);
 }

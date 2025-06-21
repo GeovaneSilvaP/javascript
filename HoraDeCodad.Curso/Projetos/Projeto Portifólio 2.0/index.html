@@ -11,29 +11,39 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   
   <script src="script.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  
+
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   
+
+
   <title>Meu Site</title>
 </head>
 
 <body>
   
+    <div class="container-site">
       <div class="geometric-background" id="geometric-background"></div>
-    <div class="particles" id="particles"></div>
-    <div class="gradient-overlay">
+      <div class="particles" id="particles"></div>
+      <div class="gradient-overlay"></div>
+    
   
   <header class="cabecalho">
     <div class="interface">
       <div id="imgs">
-        <img class="imgsLogo" src="imagens/logo.png" alt="Logo" />
+        <div class="large">
+  <svg class="logo js" preserveAspectRatio="xMidYMid meet" viewBox="0 0 630 630"><path fill="currentColor" d="M577,0 C606.271092,0 630,23.7289083 630,53 L630,577 C630,606.271092 606.271092,630 577,630 L53,630 C23.7289083,630 0,606.271092 0,577 L0,53 C0,23.7289083 23.7289083,0 53,0 L577,0 Z M479.5,285.89 C426.63,285.89 392.8,319.69 392.8,364.09 C392.8,411.808 420.615238,434.63146 462.622716,452.742599 L478.7,459.64 L483.441157,461.719734 C507.57404,472.359996 521.8,479.858 521.8,498.94 C521.8,515.88 506.13,528.14 481.6,528.14 C452.4,528.14 435.89,512.91 423.2,492.19 L375.09,520.14 C392.47,554.48 427.99,580.68 482.97,580.68 C539.2,580.68 581.07,551.48 581.07,498.18 C581.07,448.74 552.67,426.75 502.37,405.18 L487.57,398.84 L485.322788,397.859899 C461.5199,387.399087 451.17,380.1172 451.17,362.89 C451.17,348.52 462.16,337.52 479.5,337.52 C496.5,337.52 507.45,344.69 517.6,362.89 L563.7,333.29 C544.2,298.99 517.14,285.89 479.5,285.89 Z M343.09,289.27 L283.89,289.27 L283.89,490.57 C283.89,520.16 271.62,527.77 252.17,527.77 C231.83,527.77 223.37,513.82 214.07,497.32 L165.88,526.495 C179.84,556.04 207.29,580.57 254.69,580.57 C307.15,580.57 343.09,552.67 343.09,491.37 L343.09,289.27 Z"/></svg>
+</div>
       </div>
       <nav>
         <div class="navegador">
           <ul>
-            <li><a href="#"><i class="bi bi-house"></i> Lar</a></li>
-            <li><a href="#" id="btn-sobre">Sobre</a></li>
+            <li><a href="#"><i class="bi bi-house"></i> Inicio</a></li>
             <li><a href="#" id="btn-btn-hability">Habilidades</a></li>
+            <li><a href="#" id="btn-sobre">Sobre</a></li>
             <li><a href="#" id="btn-btn-projet">Projetos</a></li>
             <li><a href="#" id="btn-btn-contato">Contato</a></li>
           </ul>
@@ -47,12 +57,12 @@
       <div class="interface">
         <div class="flex">
           <div id="txt-top-site" class="animate__animated animate__slideInLeft">
-            <h1><i class="bi bi-person-circle"></i> Sobre mim.</h1>
+            <h1><i class="bi bi-person-circle"></i> BEM VINDO(A).</h1>
             <p>Olá! Meu nome é <span>[Seu Nome]</span> e eu sou um<br> Programador.
               
             <div class="site-btn">
               <button>Entrar em contato</button>
-            </div>
+            </div> 
           </div> <!--topo de site-->
           
           <div id="img-perfil" class="animate__animated animate__tada">
@@ -78,7 +88,7 @@
           </div>
           
           <div id="gatilho">
-            ...ESPECIALIDADES...
+            ESPECIALIDADES
           </div>
         </div>
       </div>
@@ -88,10 +98,18 @@
     <section class="sobre">
       <div class="interface">
         <div class="flex">
-          <div class="text-sobre">
+          <div class="text-sobre" id="text-sobre">
             <h2>MUITO PRAZER,<span> SOU [SEU NOME].</span></h2>
             <p>Sou um programador front-end apaixonado por transformar ideias em interfaces interativas e funcionais. Trabalho com foco em criar experiências digitais que sejam intuitivas, responsivas e visualmente atrativas. Tenho conhecimento sólido em HTML, CSS e JavaScript, além de utilizar frameworks e bibliotecas modernas como React, Bootstrap e outras tecnologias que otimizam o desenvolvimento web.</p>
             <p>Gosto de cuidar de cada detalhe visual e funcional, garantindo que cada projeto ofereça uma navegação fluida, acessível e agradável. Estou sempre em busca de aprendizado contínuo, explorando novas ferramentas e tendências do front-end para entregar soluções criativas e eficientes.</p>
+
+            <div class="img-sobre">
+              <img src="imagens/Gato.png" alt="gato">
+            </div>
+
+            <div id="gatoPonto">
+              
+            </div>
 
             <div class="btn-social">
               <a href="#"><i class="bi bi-whatsapp"></i></a>
@@ -103,9 +121,9 @@
       </div>
     </section>
   </main>
-  </div>
- </div>
+  
 
+</div>
 </body>
 
 </html>
