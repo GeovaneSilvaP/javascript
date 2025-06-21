@@ -4,7 +4,8 @@ const especialidade = document.querySelector("#btn-especialidade");
 const btnEspecialidade = document.querySelector("#btn-btn-hability")
 const sobreMin = document.querySelector("#text-sobre");
 const btnsobre = document.querySelector("#btn-sobre");
-
+const projetos = document.querySelector("#projetos");
+const btnProjet = document.querySelector("#btn-btn-projet")
 
 btnEspecialidade.addEventListener("click", () => {
   especialidade.scrollIntoView({ behavior: "smooth" });
@@ -14,6 +15,9 @@ btnsobre.addEventListener("click", () =>{
   sobreMin.scrollIntoView({behavior: "smooth"});
 })
 
+btnProjet.addEventListener("click", () =>{
+  projetos.scrollIntoView({behavior: "smooth"})
+})
 
 // Seleciona o container e a sessão
 const container = document.querySelector("#container-imgs");
@@ -132,20 +136,19 @@ const logo = document.querySelector('.logo');
       delay: 250
     });
 
-//img gato
-const gato = document.querySelector(".img-sobre");
-const gatoPonto = document.querySelector("#gatoPonto");
 
-const observeGato = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      gato.classList.add('visivel');
-    } else {
-      gato.classList.remove('visivel');
-    }
-  });
-}, {
-  threshold: 0.5
+
+//projetos scoll
+ScrollReveal({
+  reset: true,
+  distance: '60px',
+  duration: 2500,
+  delay: 400
 });
 
-observeGato.observe(gatoPonto);
+ScrollReveal().reveal('.titulos, .text-title, .section-title', {delay: 500, origin: 'left'});
+ScrollReveal().reveal('.projetos, .image-1, .info', {delay: 600, origin: 'bottom'});
+ScrollReveal().reveal('.text-box', {delay: 700, origin: 'right'});
+ScrollReveal().reveal('.projet-icons i', {delay: 500, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.projeto-02, .image-2, .projeto-03, .image-3', {delay: 500, origin: 'top'});
+ScrollReveal().reveal('.media-info li', {delay: 500, origin: 'left', interval: 200 });

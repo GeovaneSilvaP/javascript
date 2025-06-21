@@ -12,12 +12,17 @@
   
   <script src="script.js" defer></script>
 
+  <link rel="shortcut icon" href="imagens/Gato.png" type="image/x-icon">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   
 
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/scrollreveal"></script>
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 
   <title>Meu Site</title>
@@ -58,8 +63,15 @@
         <div class="flex">
           <div id="txt-top-site" class="animate__animated animate__slideInLeft">
             <h1><i class="bi bi-person-circle"></i> BEM VINDO(A).</h1>
-            <p>Olá! Meu nome é <span>[Seu Nome]</span> e eu sou um<br> Programador.
-              
+            <p>Olá! Meu nome é <span>[Seu Nome]</span> e eu sou um<br> Programador.</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+
             <div class="site-btn">
               <button>Entrar em contato</button>
             </div> 
@@ -103,23 +115,122 @@
             <p>Sou um programador front-end apaixonado por transformar ideias em interfaces interativas e funcionais. Trabalho com foco em criar experiências digitais que sejam intuitivas, responsivas e visualmente atrativas. Tenho conhecimento sólido em HTML, CSS e JavaScript, além de utilizar frameworks e bibliotecas modernas como React, Bootstrap e outras tecnologias que otimizam o desenvolvimento web.</p>
             <p>Gosto de cuidar de cada detalhe visual e funcional, garantindo que cada projeto ofereça uma navegação fluida, acessível e agradável. Estou sempre em busca de aprendizado contínuo, explorando novas ferramentas e tendências do front-end para entregar soluções criativas e eficientes.</p>
 
-            <div class="img-sobre">
-              <img src="imagens/Gato.png" alt="gato">
+            <div class="container-sobre">
+              <div class="cards">
+                <div class="icon-sobre">
+                  <img src="imagens/fontEnd.png" alt="">
+                </div>
+                <div class="constent-sobre">
+                  <div class="texto-sobre">
+                    <h2>Front-end</h2>
+                    <p>É a parte visível de um site ou aplicativo, com a qual o usuário interage. Inclui:</p>
+                    <a href="#">Ver mais...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="icon-sobre">
+                  <img src="imagens/programer.png" alt="">
+                </div>
+                <div class="constent-sobre">
+                  <div class="texto-sobre">
+                    <h2>Desenvolvedor</h2>
+                    <p>É a pessoa que cria e mantém os sistemas (sites, apps, softwares). Pode trabalhar com:</p>
+                    <a href="#">Ver mais...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="icon-sobre">
+                  <img src="imagens/backEnd.png" alt="">
+                </div>
+                <div class="constent-sobre">
+                  <div class="texto-sobre">
+                    <h2>Back-end</h2>
+                    <p>É a parte interna, que o usuário não vê. Cuida da lógica, banco de dados e regras do sistema.</p>
+                    <a href="#">Ver mais...</a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div id="gatoPonto">
-              
-            </div>
-
-            <div class="btn-social">
-              <a href="#"><i class="bi bi-whatsapp"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-            </div>
+          
           </div>
         </div>
       </div>
     </section>
+
+    <section class="projetos" id="projetos">
+      <div class="interface">
+        <h2 class="titulos">MEUS <span>PROJETOS</span></h2>
+        <div class="flex">
+          <div class="image-1">
+            <img src="imagens/pagina iphone.jpg" alt="iphone">
+          </div>
+          <div class="text-box">
+            <h3>Projeto Iphone</h3>
+            <p>A imagem mostra uma página promocional do iPhone 13 Pro no estilo do site oficial da Apple. O destaque central é o slogan em negrito “É todo Pro”, acompanhado de uma descrição que apresenta o iPhone 13 como um smartphone avançado com tela de 6.1 polegadas e resolução de 2532x1170 pixels. Abaixo do texto, há a imagem de um iPhone deitado na cor verde alpino. Também é possível ver um botão roxo com o texto "Comprar" e opções de cores disponíveis logo abaixo: Verde alpino, Prateado, Dourado, Grafite e Azul-Sierra. </p>
+          </div>
+        </div>
+        <div class="projet-icons">
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-discord"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+          </div>
+    </section>
+
+    <section class="projeto-02">
+  <div class="interface">
+    <div class="flex">
+      <div class="text-box-02">
+        <h3 class="text-title">Calculadora de IMC</h3>
+        
+        <div class="content-img">
+          <div class="image-2">
+            <img src="imagens/calculadora.jpg" alt="calc">
+          </div>  
+
+          <div class="info">
+            <h4 class="info-title">Descrição</h4>
+            <p>
+              Calculadora de IMC (Índice de Massa Corporal) com um design simples e moderno, em tons escuros. No topo, há o título “Calculadora de IMC”. Abaixo, aparecem dois campos de entrada: um para altura (com exemplo “1,75”) e outro para peso (com exemplo “70,5”).
+            </p>
+            <p>
+              Na parte inferior, há dois botões: um vermelho com o texto “CALCULAR” e outro cinza com o texto “LIMPAR”, que provavelmente servem para calcular o IMC com os dados inseridos ou limpar os campos, respectivamente. O fundo escuro realça os elementos da interface, deixando o visual limpo e elegante.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projeto-03">
+  <div class="interface">
+    <div class="flex">
+      <div class="container-03">
+        <h3 class="section-title">Primeiro Portifolio</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="bi bi-github"></i> Github</a></li>
+            <li><a href="#"><i class="bi bi-discord"></i> Discord</a></li>
+          </div>
+          <div class="image-3">
+            <img src="imagens/portifoli01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
   
 
