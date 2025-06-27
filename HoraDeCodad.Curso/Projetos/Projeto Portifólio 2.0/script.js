@@ -6,6 +6,13 @@ const sobreMin = document.querySelector("#text-sobre");
 const btnsobre = document.querySelector("#btn-sobre");
 const projetos = document.querySelector("#projetos");
 const btnProjet = document.querySelector("#btn-btn-projet")
+const formulario = document.querySelector("#formulario");
+const btnformulario = document.querySelector("#btn-btn-contato")
+const sitebtn = document.querySelector(".site-btn")
+
+sitebtn.addEventListener("click", () => {
+  formulario.scrollIntoView({behavior: "smooth"});
+})
 
 btnEspecialidade.addEventListener("click", () => {
   especialidade.scrollIntoView({ behavior: "smooth" });
@@ -17,6 +24,10 @@ btnsobre.addEventListener("click", () =>{
 
 btnProjet.addEventListener("click", () =>{
   projetos.scrollIntoView({behavior: "smooth"})
+})
+
+btnformulario.addEventListener("click", () =>{
+  formulario.scrollIntoView({behavior: "smooth"});
 })
 
 // Seleciona o container e a sessão
@@ -146,9 +157,9 @@ ScrollReveal({
   delay: 400
 });
 
-ScrollReveal().reveal('.titulos, .text-title, .section-title', {delay: 500, origin: 'left'});
+ScrollReveal().reveal('.titulos, .text-title, .section-title, .cards', {delay: 500, origin: 'left'});
 ScrollReveal().reveal('.projetos, .image-1, .info', {delay: 600, origin: 'bottom'});
-ScrollReveal().reveal('.text-box', {delay: 700, origin: 'right'});
-ScrollReveal().reveal('.projet-icons i', {delay: 500, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.text-box, .form-container', {delay: 700, origin: 'right'});
+ScrollReveal().reveal('.projet-icons i, .titulo-form', {delay: 500, origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.projeto-02, .image-2, .projeto-03, .image-3', {delay: 500, origin: 'top'});
-ScrollReveal().reveal('.media-info li', {delay: 500, origin: 'left', interval: 200 });
+ScrollReveal().reveal('.media-info li, ', {delay: 500, origin: 'left', interval: 200 });

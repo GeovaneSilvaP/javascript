@@ -414,7 +414,7 @@ section .text-sobre h2 {
   line-height: 40px;
   text-align: center;
   padding: 40px 4%;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 section .text-sobre h2 span{
@@ -422,7 +422,7 @@ section .text-sobre h2 span{
 }
 
 section .text-sobre p{
-  font-size: 25px;
+  font-size: 20px;
   margin: 40px 30px;
   text-align: justify;
 }
@@ -443,7 +443,7 @@ section .text-sobre span{
 .container-sobre .cards{
   position: relative;
   width: 350px;
-  height: 520px;
+  height: 650px;
   background: #ccc;
   margin: 20px;
   border-radius: 40px;
@@ -543,9 +543,9 @@ section .text-sobre span{
 }
 
 .container-sobre .cards .constent-sobre .texto-sobre{
+  z-index: 1;
   text-align: center;
-  padding: 20px 30px;
-  z-index: 2;
+  padding: 15px 20px;
   position: relative;
 }
 
@@ -561,14 +561,15 @@ section .text-sobre span{
   color: #333;
 }
 
-.container-sobre .cards .constent-sobre .texto-sobre a{
+
+.container-sobre .cards .constent-sobre .texto-sobre a {
   display: inline-block;
-  padding: 12px 25px;
-  background-color: #333;
-  color: #ccc;
-  margin-top: 10px;
+  padding: 10px 20px;
+  margin-top: 15px; /* pode ajustar menor se necessário */
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: center;
   border-radius: 30px;
-  text-decoration: none;
 }
 
 .container-sobre .cards:nth-child(2) .icon-sobre,
@@ -797,4 +798,335 @@ section .text-sobre span{
 .media-info a:hover{
     transform: scale(1.2);
     color: #12ad58;
+}
+
+/*formulario*/
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 250px;
+}
+
+.form-box{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff28;
+  border-radius: 30px;
+  width: 700px;
+}
+
+.form-box h2{
+  padding: 24px 32px;
+  font-size: 24px;
+  color: #12ad58;
+  border-bottom: thin solid #ccc;
+}
+
+.form-box form{
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+
+.form-box input, .form-box textarea{
+  width: calc(50% - 8px);
+  height: 48px;
+  border-radius: 8px;
+  border: thin solid #999;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.form-box input:first-child{
+  margin-right: 16px;
+}
+
+.form-box input[name=subject]{
+  width: 100%;
+}
+
+.form-box textarea{
+  width: 100%;
+  height: 180px;
+  padding: 16px;
+}
+
+.form-box button{
+  display: block;
+  border: none;
+  outline: none;
+  width: 180px;
+  height: 48px;
+  background-color: #12ad58;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-box button:hover{
+  background-color: #eff0ff;
+  color: #12ad58;
+}
+
+/* rodapé */
+
+footer{
+  width: 100%;
+  color: #ffffff;
+}
+
+.footer-content{
+  background-color: #181B19;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+.footer-contacts h1{
+  margin-bottom: 0.75rem;
+}
+
+.footer-social-midia{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social-midia a{
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #effaf0;
+}
+
+.footer-social-midia a i{
+  color: #12ad58;
+}
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-link{
+  text-decoration: none;
+}
+
+.footer-list .footer-link{
+  color: #ccc;
+}
+
+.footer-list .footer-link:hover{
+  color: #3cd6a3;
+}
+
+.footer-subscript{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-subscript p{
+  color: #ccc
+}
+
+.input_group{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.input_group input{
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.input_group button{
+  background-color: #12ad58;
+  border: none;
+  color: #fff;
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+#footer-copyrigth{
+  display: flex;
+  justify-content: center;
+  background-color: #252727;
+  font-size: 0.9rem;
+  padding: 1rem;
+  font-weight: 100;
+}
+
+/* Responsividade Geral */
+@media (max-width: 1200px) {
+  .interface,
+  .projeto-02 .interface {
+    padding: 0 20px;
+  }
+
+  #container-imgs {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .navegador ul li {
+    padding: 0 20px;
+  }
+
+  .topo-do-site #img-perfil img {
+    width: 400px;
+    height: auto;
+  }
+
+  .projetos .image-1,
+  .projetos .text-box {
+    width: 90%;
+    transform: none;
+  }
+
+  .container-sobre .cards {
+    width: 90%;
+    height: auto;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .image-3 img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h2,
+  .especialidade .titulos,
+  section .text-sobre h2 {
+    font-size: 36px;
+  }
+
+  #txt-top-site h1,
+  .topo-do-site #txt-top-site p {
+    font-size: 30px;
+  }
+
+  .topo-do-site .flex,
+  .especialidade .flex,
+  .container-sobre,
+  .content-img,
+  .content,
+  .projeto-02 .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .topo-do-site #img-perfil img {
+    width: 300px;
+    height: auto;
+  }
+
+  #container-imgs img {
+    width: 100px;
+  }
+
+  .form-box {
+    width: 90%;
+  }
+
+  .form-box input {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  nav .navegador ul li {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .social-icons {
+    gap: 20px;
+    font-size: 1.5rem;
+  }
+
+  .topo-do-site #txt-top-site p span {
+    font-size: 36px;
+  }
+
+  .container-sobre .cards {
+    margin: 10px 0;
+  }
+
+  .projetos .image-1 {
+    height: auto;
+  }
+
+  .image-2 img,
+  .image-3 img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .media-info li {
+    font-size: 1.1rem;
+    padding-left: 0 !important;
+  }
+
+  .form-box h2 {
+    font-size: 20px;
+  }
+
+  .input_group button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h2,
+  .especialidade .titulos,
+  .section-title {
+    font-size: 28px;
+  }
+
+  .topo-do-site #txt-top-site h1,
+  .topo-do-site #txt-top-site p {
+    font-size: 22px;
+  }
+
+  .topo-do-site #txt-top-site p span {
+    font-size: 28px;
+  }
+
+  .form-box input,
+  .form-box textarea,
+  .form-box button {
+    font-size: 14px;
+  }
+
+  .form-box button {
+    width: 100%;
+  }
 }
