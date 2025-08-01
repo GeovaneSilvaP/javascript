@@ -10,23 +10,28 @@ const formulario = document.querySelector("#formulario");
 const btnformulario = document.querySelector("#btn-btn-contato")
 const sitebtn = document.querySelector(".site-btn")
 
-sitebtn.addEventListener("click", () => {
+sitebtn.addEventListener("click", (e) => {
+  e.preventDefault()
   formulario.scrollIntoView({behavior: "smooth"});
 })
 
-btnEspecialidade.addEventListener("click", () => {
+btnEspecialidade.addEventListener("click", (e) => {
+   e.preventDefault()
   especialidade.scrollIntoView({ behavior: "smooth" });
 });
 
-btnsobre.addEventListener("click", () =>{
+btnsobre.addEventListener("click", (e) =>{
+   e.preventDefault()
   sobreMin.scrollIntoView({behavior: "smooth"});
 })
 
-btnProjet.addEventListener("click", () =>{
+btnProjet.addEventListener("click", (e) =>{
+   e.preventDefault()
   projetos.scrollIntoView({behavior: "smooth"})
 })
 
-btnformulario.addEventListener("click", () =>{
+btnformulario.addEventListener("click", (e) =>{
+   e.preventDefault()
   formulario.scrollIntoView({behavior: "smooth"});
 })
 
