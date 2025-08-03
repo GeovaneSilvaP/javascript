@@ -114,7 +114,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.507);
 }
 
 .tech-icon:hover .tech-tooltip {

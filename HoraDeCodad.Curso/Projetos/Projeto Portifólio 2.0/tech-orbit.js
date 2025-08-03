@@ -48,7 +48,7 @@ function setupOrbitSystem(){
         { name: 'Node.js', icon: 'fab fa-node-js', color: '#339933' },
         { name: 'Bootstrap', icon: 'fab fa-bootstrap', color: '#7952B3' },
         { name: 'MySQL', icon: 'fas fa-database', color: '#00758F' },
-        { name: 'Angular', icon: 'fab fa-angular', color: '#DD0031' },
+        { name: 'React', icon: 'fab fa-react', color: 'rgba(0, 238, 255, 0.56)' },
         { name: 'Git', icon: 'fab fa-git-alt', color: '#F05032' },
         { name: 'Java', icon: 'fab fa-java', color: '#007396' },
         { name: 'CodeIgniter', icon: 'fas fa-fire', color: '#f09732ff' }
