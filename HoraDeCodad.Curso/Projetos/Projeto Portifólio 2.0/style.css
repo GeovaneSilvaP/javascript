@@ -344,6 +344,11 @@ section .especialidade {
   padding: 40px 4%;
 }
 
+.especialidade{
+  max-width: 1000px;
+  margin: auto;
+}
+
 .especialidade .flex{
   margin: 15px ;
   gap: 50px;
@@ -358,40 +363,138 @@ section .especialidade {
   margin-top: 70px;
 }
 
+
 .titulos i{
   font-size: 70px;
   color: #12ad58;
 }
 
-#container-imgs{
-  width: 70%;
-  margin: 50px 70px;
-  margin-left: 250px;
-  background: rgba(236, 230, 230, 0.123);
-  padding: 20px;
-  border-radius: 10px;
+/*especialidades cards */
+.about-me h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.about-me h1::after{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #00ff0d, #06522e);
+  margin-top: 10px;
+}
+
+.cards-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  background-color: #0f83438f;
+  border-radius: 12px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2), 0 0 20px rgba(1, 255, 44, 0.2);
+  border: 1px solid #16751e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.4), 0 0 30px rgba(6, 252, 47, 0.2);
+}
+
+.card-header{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.card-header h2{
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+}
+
+.card p{
+  color: #ffffff;
+}
+
+.card i{
+  color: #ffffff;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.icon{
+  width: 35px;
+  height: 35px;
+  background-color: #02ff2c;
+  border-radius: 50%;
+}
+
+.habilidades-tecnicas{
+  background-color: #ffffff33;
+  padding: 40px 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.habilidades-tecnicas h3{
+  font-size: 28px;
+  color: #12ad58;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.icons-habilidades {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: center;
+  gap: 10px;
+  margin-left: 900px;
+  margin-top: 40px;
+}
+
+
+.icone {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 80px;
+  gap: 20px;
+}
+
+
+.icone i {
+  font-size: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
   cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s ease;
 }
 
-#container-imgs.visivel{
-  opacity: 1;
-  visibility: visible;
+.icone i:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 6px currentColor);
 }
 
-#container-imgs img{
-  width: 150px;
-  margin: 10px;
-  border-radius: 8px;
-   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-   transition: 0.5s;
+.icone span {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
 }
-#container-imgs img:hover{
-box-shadow: 0px 0px 20px #75767A;
-transform: scale(1.05);
-}
+
 
 /*Sobre*/
 
