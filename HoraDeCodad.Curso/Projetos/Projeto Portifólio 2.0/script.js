@@ -1,5 +1,4 @@
-//click menu
-
+// clique no menu
 const especialidade = document.querySelector("#btn-especialidade");
 const btnEspecialidade = document.querySelector("#btn-btn-hability")
 const sobreMin = document.querySelector("#sobre-mim");
@@ -12,8 +11,9 @@ const sitebtn = document.querySelector(".site-btn");
 const sobre = document.querySelector("#sobre");
 const btnSobreTopo = document.querySelector("#btn-sobre-topo");
 
-
-sitebtn.addEventListener("click", (e) => {
+//Evento de click menu
+function eventoDeClick() {
+  sitebtn.addEventListener("click", (e) => {
   e.preventDefault()
   formulario.scrollIntoView({behavior: "smooth"});
 })
@@ -42,8 +42,11 @@ btnSobreTopo.addEventListener("click", (e) =>{
   e.preventDefault()
   sobre.scrollIntoView({behavior: "smooth"})
 })
+}
 
-// Create geometric shapes
+eventoDeClick();
+
+// Criar formas geométricas
 function createShapes() {
   const background = document.getElementById('geometric-background');
   const shapeTypes = ['square', 'circle', 'triangle', 'rectangle'];
@@ -53,15 +56,15 @@ function createShapes() {
     const shapeClass = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
     shape.className = `shape ${shapeClass}`;
     
-    // Random positions
+    // Posições aleatórias
     const posX = Math.random() * 100;
     const posY = Math.random() * 100;
     
-    // Random animation properties
+    // Propriedades de animação aleatórias
     const delay = Math.random() * 10;
     const duration = Math.random() * 10 + 10;
     
-    // Apply styles
+    // Aplicar estilos
     shape.style.left = `${posX}%`;
     shape.style.top = `${posY}%`;
     shape.style.animationDelay = `${delay}s`;
@@ -71,7 +74,7 @@ function createShapes() {
   }
 }
 
-// Create particles
+// Criar partículas
 function createParticles() {
   const particlesContainer = document.getElementById('particles');
   
@@ -79,15 +82,15 @@ function createParticles() {
     const particle = document.createElement('div');
     particle.className = 'particle';
     
-    // Random positions
+    // Posições aleatórias
     const posX = Math.random() * 100;
     const posY = Math.random() * 100;
     
-    // Random animation properties
+    // Propriedades de animação aleatórias
     const delay = Math.random() * 8;
     const duration = Math.random() * 4 + 4;
     
-    // Apply styles
+    // Aplicar estilos
     particle.style.left = `${posX}%`;
     particle.style.top = `${posY}%`;
     particle.style.animationDelay = `${delay}s`;
@@ -97,7 +100,7 @@ function createParticles() {
   }
 }
 
-// Mouse movement interaction
+// Interação com movimento do mouse
 function addMouseInteraction() {
   document.addEventListener('mousemove', (e) => {
     const x = e.clientX / window.innerWidth;
@@ -115,21 +118,19 @@ function addMouseInteraction() {
   });
 }
 
-// Initialize animation
+// Inicializar animação
 document.addEventListener('DOMContentLoaded', () => {
   createShapes();
   createParticles();
   addMouseInteraction();
 });
 
-//LOGO
-
-
+// LOGO
 const logo = document.querySelector('.logo');
     const button = document.getElementById('rotateBtn');
     let rotations = 0;
 
-    // Bouncing animation (loop)
+    // Animação de "quicar" (loop)
     anime({
       targets: '.logo',
       scale: [
@@ -142,8 +143,7 @@ const logo = document.querySelector('.logo');
     });
 
 
-
-//projetos scoll
+// projetos scroll
 ScrollReveal({
   reset: true,
   distance: '60px',

@@ -1,4 +1,4 @@
-/* Estilos para el sistema de órbitas tecnológicas */
+/* Estilos para o sistema de órbitas tecnológicas */
 
 .orbit-container {
     position: absolute;
@@ -49,7 +49,7 @@
     filter: drop-shadow(0 0 5px rgba(56, 182, 255, 0.8));
 }
 
-/* Animación de órbita */
+/* Animação de órbita */
 @keyframes orbit-rotation {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -59,7 +59,7 @@
     }
 }
 
-/* Animación de flotación para los íconos */
+/* Animação de flutuação para os ícones */
 @keyframes tech-bob {
     0%, 100% {
         transform: translateY(0);
@@ -69,7 +69,7 @@
     }
 }
 
-/* Estilos para órbitas individuales */
+/* Estilos para órbitas individuais */
 .orbit-1 {
     width: 500px;
     height: 300px;
@@ -91,7 +91,7 @@
     animation-direction: normal;
 }
 
-/* Animación al pasar el mouse por encima */
+/* Animação ao passar o mouse por cima */
 .tech-icon:hover {
     transform: scale(1.4);
     background-color: var(--primary);
@@ -99,7 +99,7 @@
     box-shadow: 0 0 30px var(--primary);
 }
 
-/* Tooltip para mostrar el nombre de la tecnología */
+/* Tooltip para mostrar o nome da tecnologia */
 .tech-tooltip {
     position: absolute;
     background-color: var(--dark-light);
@@ -121,7 +121,7 @@
     opacity: 1;
 }
 
-/* Optimizaciones para móviles */
+/* Otimizações para dispositivos móveis */
 @media (max-width: 768px) {
     .orbit-container {
         display: none !important;
@@ -132,7 +132,7 @@
     }
 }
 
-/* Ajustes para pantallas medianas */
+/* Ajustes para telas médias */
 @media (max-width: 1200px) {
     .tech-icon {
         width: 60px;
@@ -159,7 +159,7 @@
     }
 }
 
-/* Ajustes para pantallas de baja altura */
+/* Ajustes para telas de baixa altura */
 @media (max-height: 800px) {
     .orbit-1 {
         animation-duration: 20s;
